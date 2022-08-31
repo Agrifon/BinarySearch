@@ -2,6 +2,7 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 class Vector_with_binary_search				//		O(log n)
 {
@@ -14,7 +15,7 @@ public:
 	Vector_with_binary_search(int size);
 	~Vector_with_binary_search() = default;
 
-	int binarySearch();
+	bool binarySearch(int item);
 
 	friend std::ostream& operator<< (std::ostream& out, const Vector_with_binary_search& vector);
 };
